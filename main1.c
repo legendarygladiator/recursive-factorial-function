@@ -1,12 +1,12 @@
 #include <stdio.h>
-long int fact(int n);
-int main ()
+long int fact(int);
+int main()
 {
-    int n;
-    printf ("enter the number");
-    scanf ("%d ",&n);
-    printf ("the factorial is %ld",fact(n));
-    return 0;
+    int a,b;
+    printf ("Enter the number to find the factorial ");
+    scanf ("%d",&a);
+    b=fact(a);
+    printf ("The factorial is %ld",b);
 }
 long int fact(int n)
 {
